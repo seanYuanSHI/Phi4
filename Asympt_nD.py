@@ -805,7 +805,6 @@ def E_RlAs(R, A, branch='an', dim=2, eta=0.65, ifplot=False):
         _, rcD, qinf = Tau1A(R, A, eta=eta, dim=dim, nt=nt)
         # normalize by R
         rcDR2 = (rcD/R)**2
-        #rm2 = (rm/R)**2
         
         # explicitly source dependent contribution
         frac = 2*ss.gammaincc(d2, rcDR2) - 1
