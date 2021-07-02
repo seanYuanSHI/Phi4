@@ -16,9 +16,9 @@ from decimal import Decimal, getcontext
 
 
 # R=0.01 or 100
-R = 0.01
+R = 100
 
-mode = 'eg'
+mode = 'H'
 # 'eg'  : plot example solution
 # 'qc'  : plot qc, critical initial value, 
 # 'rc'  : plot rc, light horizon radius

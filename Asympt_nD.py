@@ -803,29 +803,16 @@ def E_RlAs(R, A, branch='an', dim=2, eta=0.65, ifplot=False):
         nt = dh[branch]
         # light horizon radius
         _, rcD, qinf = Tau1A(R, A, eta=eta, dim=dim, nt=nt)
-        ## 1D light horizon radius
-        #rc1 = Asympt_1D.rcConst(qinf)
-        ## radius where source strength is estimated
-        #rm = rcD + (eta-1)*rc1        
         # normalize by R
         rcDR2 = (rcD/R)**2
         #rm2 = (rm/R)**2
         
         # explicitly source dependent contribution
         frac = 2*ss.gammaincc(d2, rcDR2) - 1
-        #frac = 2*ss.gammaincc(d2, rm2) - 1
         
         # 1D contribution
-        # source at transition time, numpy array
-        S = -qinf*(qinf**2-1)/2 # expected to be >0
-        # largeness factor
-        M = 1/2/np.sqrt(S)
-        # approximate g factor, next to leading order
-        g = 1 - 1/M + 3*np.arcsinh(np.sqrt(M))/2/M**2
-        # 1D contribution
-        E1 = 2*g*rcD**(dim-1)/3
-        #E1 = 2*g*rm**(dim-1)/3
-        
+        E1 = 2*rcD**(dim-1)/3
+ 
         # total energy
         E = E1 + E0*frac
         

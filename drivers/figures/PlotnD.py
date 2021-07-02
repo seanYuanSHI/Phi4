@@ -52,8 +52,8 @@ Ntmax = 2**24
 NR = 62
 
 # if save figure to file
-ifsave = True
-#ifsave = False
+#ifsave = True
+ifsave = False
 
 # if show figure to screen
 ifshow = not ifsave
