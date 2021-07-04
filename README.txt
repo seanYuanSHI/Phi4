@@ -45,7 +45,9 @@ drivers/Energy.py : Refine finite energy potentials, estimate their energy, and 
 
 
 ##############################################################
-Scripts in ./drivers/plots/ are used to generate figures for the paper by plotting 1D/2D/3D figures and asymptotic figures. These scripts assume data has already been generated and is stored in folders like ../data/1D/batch_e0.001/raw/. Example data can be found at https://doi.org/10.5281/zenodo.5021378, which is used for figures in the paper "Nonperturbative phi4 potentials: Phase transitions and light horizons".
+Scripts in ./drivers/plots/ are used to generate figures for the paper by plotting 1D/2D/3D figures and asymptotic figures. These scripts assume data has already been generated and is stored in folders like ../data/1D/batch_e0.001/raw/. 
+
+Example data can be found at https://doi.org/10.5281/zenodo.5021378, which is used for figures in the paper "Nonperturbative phi4 potentials: Phase transitions and light horizons".
 
 For 0.01<R<1000, reasonable convergence can already be obtained for epsilon=0.01. However, since the ODE is stiff, the convergence is always poor near boundaries/separatrics.
 
