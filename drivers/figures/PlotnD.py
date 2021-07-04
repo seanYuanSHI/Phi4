@@ -24,7 +24,7 @@ from decimal import getcontext
 
 #########################
 # dimension, dim = 2 or 3
-dim = 2
+dim = 3
 
 # plot flag
 flag = 1
