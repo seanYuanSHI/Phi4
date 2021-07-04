@@ -39,7 +39,7 @@ epsilon = 1e-2
 
 # R slice to process assuming file already exist
 # # targeted final integration time is tf = 5*max(1,R)
-iR = 11
+iR = 5
 tfRmin = 2.2 # only plot data with tfinal>tfRmin*R
 
 # decimal precision

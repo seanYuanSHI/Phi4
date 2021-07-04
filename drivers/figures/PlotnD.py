@@ -24,10 +24,10 @@ from decimal import getcontext
 
 #########################
 # dimension, dim = 2 or 3
-dim = 2
+dim = 3
 
 # plot flag
-flag = 0
+flag = 1
 
 # The following do not require Plot*D_markups
 #    flag = 1 # plot phase diagram only
