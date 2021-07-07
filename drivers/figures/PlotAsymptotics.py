@@ -5,6 +5,11 @@ Created on Thu May 20 10:14:34 2021
 @author: water
 """
 
+import sys
+# insert at 1, 0 is the script path (or '' in REPL)
+sys.path.insert(1, '../../')
+
+
 # This script plot R<<1 and R>>1 cases
 import SE
 import RA
@@ -18,7 +23,7 @@ from decimal import Decimal, getcontext
 # R=0.01 or 100
 R = 100
 
-mode = 'H'
+mode = 'eg'
 # 'eg'  : plot example solution
 # 'qc'  : plot qc, critical initial value, 
 # 'rc'  : plot rc, light horizon radius
